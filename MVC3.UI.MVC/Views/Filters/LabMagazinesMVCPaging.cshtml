@@ -1,0 +1,81 @@
+﻿@*@model IEnumerable<MVC3.DATA.EF.Magazine>*@
+@model PagedList.IPagedList<MVC3.DATA.EF.Magazine>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "LabMagazinesMVCPaging";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm("LabMagazinesMVCPaging", "Filters", FormMethod.Get))
+{
+    <p class="pull-right text-right">
+        @Html.TextBox("searchString", ViewBag.CurrentFilter as string, new { placeholder = "Search Title" })
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </p>
+}
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("LabMagazinesMVCPaging", new { page, currentFilter = ViewBag.CurrentFilter }))
+
+    @if (Model.Count == 0)
+    {
+        <p class="alert alert-warning">
+            No Results meet your criteria
+        </p>
+    }
+    else
+    {
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().MagazineTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().IssuesPerYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().PricePerYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Circulation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().PublishRate)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MagazineTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IssuesPerYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PricePerYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Circulation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishRate)
+            </td>
+        </tr>
+    }
+
+</table>
+    }

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookStorePlusModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="AuthorID" />
+    </Key>
+    <Property Name="AuthorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="BookAuthors" Relationship="Self.FK_TitleAuthors_Authors" FromRole="Authors" ToRole="BookAuthors" />
+  </EntityType>
+  <EntityType Name="BookAuthor">
+    <Key>
+      <PropertyRef Name="BookAuthorID" />
+    </Key>
+    <Property Name="BookAuthorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookID" Type="Int32" Nullable="false" />
+    <Property Name="AuthorID" Type="Int32" Nullable="false" />
+    <Property Name="AuthorOrder" Type="Byte" />
+    <NavigationProperty Name="Author" Relationship="Self.FK_TitleAuthors_Authors" FromRole="BookAuthors" ToRole="Authors" />
+    <NavigationProperty Name="Book" Relationship="Self.FK_TitleAuthors_Titles" FromRole="BookAuthors" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="BookRoyalty">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="Int32" Nullable="false" />
+    <Property Name="RoyaltyRate" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Advance" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="Book" Relationship="Self.FK_BookRoyalties_Books" FromRole="BookRoyalties" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ISBN" Type="String" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Name="BookTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GenreID" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="UnitsSold" Type="Int32" />
+    <Property Name="PublishDate" Type="DateTime" Precision="0" />
+    <Property Name="PublisherID" Type="Int32" Nullable="false" />
+    <Property Name="BookImage" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsSiteFeature" Type="Boolean" Nullable="false" />
+    <Property Name="IsGenreFeature" Type="Boolean" Nullable="false" />
+    <Property Name="BookStatusID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BookAuthors" Relationship="Self.FK_TitleAuthors_Titles" FromRole="Books" ToRole="BookAuthors" />
+    <NavigationProperty Name="BookRoyalty" Relationship="Self.FK_BookRoyalties_Books" FromRole="Books" ToRole="BookRoyalties" />
+    <NavigationProperty Name="BookStatus" Relationship="Self.FK_Books_BookStatuses" FromRole="Books" ToRole="BookStatuses" />
+    <NavigationProperty Name="Genre" Relationship="Self.FK_Titles_Genres" FromRole="Books" ToRole="Genres" />
+    <NavigationProperty Name="Publisher" Relationship="Self.FK_Titles_Publishers" FromRole="Books" ToRole="Publishers" />
+  </EntityType>
+  <EntityType Name="BookStatus">
+    <Key>
+      <PropertyRef Name="BookStatusID" />
+    </Key>
+    <Property Name="BookStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BookStatusName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Notes" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Books" Relationship="Self.FK_Books_BookStatuses" FromRole="BookStatuses" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="GenreID" />
+    </Key>
+    <Property Name="GenreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GenreName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.FK_Titles_Genres" FromRole="Genres" ToRole="Books" />
+  </EntityType>
+  <EntityType Name="Magazine">
+    <Key>
+      <PropertyRef Name="MagazineID" />
+    </Key>
+    <Property Name="MagazineID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MagazineTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IssuesPerYear" Type="Int32" Nullable="false" />
+    <Property Name="PricePerYear" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Circulation" Type="Int32" />
+    <Property Name="PublishRate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Publisher">
+    <Key>
+      <PropertyRef Name="PublisherID" />
+    </Key>
+    <Property Name="PublisherID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PublisherName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="State" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.FK_Titles_Publishers" FromRole="Publishers" ToRole="Books" />
+  </EntityType>
+  <Association Name="FK_TitleAuthors_Authors">
+    <End Role="Authors" Type="Self.Author" Multiplicity="1" />
+    <End Role="BookAuthors" Type="Self.BookAuthor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Authors">
+        <PropertyRef Name="AuthorID" />
+      </Principal>
+      <Dependent Role="BookAuthors">
+        <PropertyRef Name="AuthorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TitleAuthors_Titles">
+    <End Role="Books" Type="Self.Book" Multiplicity="1" />
+    <End Role="BookAuthors" Type="Self.BookAuthor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="BookAuthors">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookRoyalties_Books">
+    <End Role="Books" Type="Self.Book" Multiplicity="1" />
+    <End Role="BookRoyalties" Type="Self.BookRoyalty" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Books">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="BookRoyalties">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Books_BookStatuses">
+    <End Role="BookStatuses" Type="Self.BookStatus" Multiplicity="1" />
+    <End Role="Books" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BookStatuses">
+        <PropertyRef Name="BookStatusID" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="BookStatusID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Titles_Genres">
+    <End Role="Genres" Type="Self.Genre" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Books" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genres">
+        <PropertyRef Name="GenreID" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="GenreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Titles_Publishers">
+    <End Role="Publishers" Type="Self.Publisher" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Books" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publishers">
+        <PropertyRef Name="PublisherID" />
+      </Principal>
+      <Dependent Role="Books">
+        <PropertyRef Name="PublisherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BookStorePlusEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Authors" EntityType="Self.Author" />
+    <EntitySet Name="BookAuthors" EntityType="Self.BookAuthor" />
+    <EntitySet Name="BookRoyalties" EntityType="Self.BookRoyalty" />
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="BookStatuses" EntityType="Self.BookStatus" />
+    <EntitySet Name="Genres" EntityType="Self.Genre" />
+    <EntitySet Name="Magazines" EntityType="Self.Magazine" />
+    <EntitySet Name="Publishers" EntityType="Self.Publisher" />
+    <AssociationSet Name="FK_TitleAuthors_Authors" Association="Self.FK_TitleAuthors_Authors">
+      <End Role="Authors" EntitySet="Authors" />
+      <End Role="BookAuthors" EntitySet="BookAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TitleAuthors_Titles" Association="Self.FK_TitleAuthors_Titles">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="BookAuthors" EntitySet="BookAuthors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookRoyalties_Books" Association="Self.FK_BookRoyalties_Books">
+      <End Role="Books" EntitySet="Books" />
+      <End Role="BookRoyalties" EntitySet="BookRoyalties" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Books_BookStatuses" Association="Self.FK_Books_BookStatuses">
+      <End Role="BookStatuses" EntitySet="BookStatuses" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Titles_Genres" Association="Self.FK_Titles_Genres">
+      <End Role="Genres" EntitySet="Genres" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Titles_Publishers" Association="Self.FK_Titles_Publishers">
+      <End Role="Publishers" EntitySet="Publishers" />
+      <End Role="Books" EntitySet="Books" />
+    </AssociationSet>
+    <EntitySet Name="UserDetails" EntityType="BookStorePlusModel.UserDetail" />
+  </EntityContainer>
+  <EntityType Name="UserDetail">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="FavoriteColor" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

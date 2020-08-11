@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Search and Paging";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="col-md-12">
+    <h3>Server-side</h3>
+    <p>
+        @Html.ActionLink("Server-Side Querystring Search (Author Name)", "AuthorsQS", "Filters", null, new { @class = "btn btn-primary" })
+    </p>
+    <p>
+        @Html.ActionLink("Lab: Server-Side Querystring Search (Magazine Category)", "LabMagazinesQS", "Filters", null, new { @class = "btn btn-primary" })
+    </p>
+    <p>
+        @Html.ActionLink("Server-Side MVCPaging (Books)", "BooksMVCPaging", "Filters", null, new { @class = "btn btn-primary" })
+    </p>
+    <p>
+        @Html.ActionLink("Lab: Server-Side MVCPaging (Magazines)", "LabMagazinesMVCPaging", "Filters", null, new { @class = "btn btn-primary" })
+    </p>
+</div>

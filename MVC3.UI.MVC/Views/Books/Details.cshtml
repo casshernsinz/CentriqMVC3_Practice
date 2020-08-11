@@ -1,0 +1,138 @@
+﻿@model MVC3.DATA.EF.Book
+
+@{
+	ViewBag.Title = $"{Model.BookTitle}";
+}
+
+<h2><em>@ViewBag.Title</em></h2>
+
+<hr />
+
+<div class="col-md-6">
+	<dl class="dl-horizontal">
+		<dt>
+			@Html.DisplayNameFor(model => model.ISBN)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.ISBN)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.BookTitle)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.BookTitle)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Description)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Description)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Price)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Price)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.UnitsSold)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.UnitsSold)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.PublishDate)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.PublishDate)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.IsSiteFeature)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.IsSiteFeature)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.IsGenreFeature)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.IsGenreFeature)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.BookRoyalty.BookID)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.BookRoyalty.BookID)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.BookStatus.BookStatusName)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.BookStatus.BookStatusName)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Genre.GenreName)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Genre.GenreName)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Publisher.PublisherName)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Publisher.PublisherName)
+		</dd>
+
+	</dl>
+
+    @*Add the "Add to Cart" functionality to the UI*@
+    <p>        
+        @using (Html.BeginForm("AddToCart", "Books", new { @bookId = Model.BookID }, FormMethod.Post, new { @class = "text - center" }))
+        {
+            @*HiddenFor creates a hidden input on a form for a field. In this cassse for the BookID*@
+            @Html.HiddenFor(x => x.BookID)
+            <span class="label" style="color:black">Quantity: </span>
+            @Html.TextBox("Qty",1, new { @class = "form-control", @style = "max-width:50px;display:inline;"})
+            <input type="submit" value="Add to Cart"class="btn btn-primary" name="qty"/>
+
+        }
+    </p>
+
+</div>
+@* ADD for 2-column layout with full-sized image*@
+<div class="col-md-6 text-center">
+	<img src="~/Content/imgstore/books/@Model.BookImage" title="@Model.BookTitle" alt="Book cover"
+		 class="img-rounded"
+		 style="width: 90%; max-width: 333px;" />
+</div>
+@*REMOVE </div>*@
+<div class="clearfix"></div>
+<p>
+	@*TADD hr for visual clarity*@
+	<hr />
+	@Html.ActionLink("Edit", "Edit", new { id = Model.BookID }) |
+	@Html.ActionLink("Back to List", "Index")
+</p>

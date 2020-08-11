@@ -1,0 +1,99 @@
+﻿
+@*Updating with Paging List and usign below*@
+@*@model IEnumerable<MVC3.DATA.EF.Book>*@
+@model PagedList.IPagedList<MVC3.DATA.EF.Book>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "BooksMVCPaging";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@*Search Form with using Html.BeginForm*@
+@using (Html.BeginForm("BooksMVCPaging", "Filters", FormMethod.Get))
+{
+    <p class="pull-right text-right">
+        @*Set the text box for search but also track the last(aka current) search term applied
+               (this is tracked with our ViewBag*@
+        @*signature: ("Name",       "Current Value",                        htmlAttributes)*@
+        @Html.TextBox("searchString", ViewBag.CurrentFilter as string, new { placeholder = "Search Title" })
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </p>
+}
+
+@*Adding the Pager Code wherever we want it to show on the page*@
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("BooksMVCPaging",new { page, currentFilter = ViewBag.CurrentFilter }))
+@*Toggle Disclaimer for no results*@
+@if (Model.Count == 0)
+{
+    <p class="alert alert-warning">
+        No Results meet your criteria
+    </p>
+}
+else
+{
+
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.ISBN)*@
+            @Html.DisplayFor(model => model.FirstOrDefault().ISBN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().BookTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().UnitsSold)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().PublishDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().BookStatus.BookStatusName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Genre.GenreName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstOrDefault().Publisher.PublisherName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ISBN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnitsSold)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PublishDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BookStatus.BookStatusName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Genre.GenreName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Publisher.PublisherName)
+        </td>
+    </tr>
+}
+</table>
+}

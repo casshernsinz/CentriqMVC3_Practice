@@ -1,0 +1,121 @@
+﻿@model MVC3.DATA.EF.Author
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    This page shows weather info for US authors with a zip code on file by consuming OpenWeatherMap.org wev service.
+</p>
+
+<div>
+    <h4>Author</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        <dt>            
+            @Html.DisplayNameFor(model => model.ZipCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZipCode)
+            @if (Model.ZipCode != null)
+            {
+                //Only show this icon if the Author has a Zip Code on file
+                //Because those are the only ones who can consume the service to get the weather info
+                <i id="showWeather" class="fa fa-cloud"></i>
+            }
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AuthorID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@*Placeholder for weather info pop-up when the cloud icon is clicked*@
+<div id="currentWeather" title="Current Conditions for @Model.ZipCode"></div>
+
+@*Use jQuery to consume and process the WebAPI - displaying what we want on the webpage*@
+
+@section scripts{
+<script>
+        // 1) precreate URL for weather service
+
+        var url = "http://api.openweathermap.org/data/2.5/weather?zip=" + @Model.ZipCode + ",us&appid=b5ff7b00f21c4ed482cd316c780640e9&units=imperial";
+
+        // 2) Use the $.getJSON() to call the API
+
+        $(function () {
+            $.getJSON(url)
+                //on success, use data object returned to get temperature info
+                .done(function (data) {
+                    document.getElementById("currentWeather").innerHTML = "<strong>@Model.ZipCode temperature is " + data.main.temp + "&deg;F</strong>";
+                });
+
+            // 3) Show that in the dialog box on the cloud-icon click
+
+            //Set up the dialog box for show/hide animations
+            $("#currentWeather").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 300//in miliseconds
+                },
+                hide: {
+                    effect: "blind",
+                    durartion: 300
+                }
+            });//End show/hide dialog properties
+
+            $("#showWeather").css("cursor", "pointer");
+
+            //Set the click event to launch the dialog
+            $("#showWeather").on("click", function () {
+                $("#currentWeather").dialog("open");
+            });//end click event handler
+        });                
+</script>
+    }

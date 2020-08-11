@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BookStorePlusModelStoreContainer" CdmEntityContainer="BookStorePlusEntities">
+    <EntitySetMapping Name="Authors">
+      <EntityTypeMapping TypeName="BookStorePlusModel.Author">
+        <MappingFragment StoreEntitySet="Authors">
+          <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookAuthors">
+      <EntityTypeMapping TypeName="BookStorePlusModel.BookAuthor">
+        <MappingFragment StoreEntitySet="BookAuthors">
+          <ScalarProperty Name="BookAuthorID" ColumnName="BookAuthorID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+          <ScalarProperty Name="AuthorOrder" ColumnName="AuthorOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookRoyalties">
+      <EntityTypeMapping TypeName="BookStorePlusModel.BookRoyalty">
+        <MappingFragment StoreEntitySet="BookRoyalties">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="RoyaltyRate" ColumnName="RoyaltyRate" />
+          <ScalarProperty Name="Advance" ColumnName="Advance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="BookStorePlusModel.Book">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="BookTitle" ColumnName="BookTitle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="GenreID" ColumnName="GenreID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="UnitsSold" ColumnName="UnitsSold" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="PublisherID" ColumnName="PublisherID" />
+          <ScalarProperty Name="BookImage" ColumnName="BookImage" />
+          <ScalarProperty Name="IsSiteFeature" ColumnName="IsSiteFeature" />
+          <ScalarProperty Name="IsGenreFeature" ColumnName="IsGenreFeature" />
+          <ScalarProperty Name="BookStatusID" ColumnName="BookStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookStatuses">
+      <EntityTypeMapping TypeName="BookStorePlusModel.BookStatus">
+        <MappingFragment StoreEntitySet="BookStatuses">
+          <ScalarProperty Name="BookStatusID" ColumnName="BookStatusID" />
+          <ScalarProperty Name="BookStatusName" ColumnName="BookStatusName" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="BookStorePlusModel.Genre">
+        <MappingFragment StoreEntitySet="Genres">
+          <ScalarProperty Name="GenreID" ColumnName="GenreID" />
+          <ScalarProperty Name="GenreName" ColumnName="GenreName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Magazines">
+      <EntityTypeMapping TypeName="BookStorePlusModel.Magazine">
+        <MappingFragment StoreEntitySet="Magazines">
+          <ScalarProperty Name="MagazineID" ColumnName="MagazineID" />
+          <ScalarProperty Name="MagazineTitle" ColumnName="MagazineTitle" />
+          <ScalarProperty Name="IssuesPerYear" ColumnName="IssuesPerYear" />
+          <ScalarProperty Name="PricePerYear" ColumnName="PricePerYear" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Circulation" ColumnName="Circulation" />
+          <ScalarProperty Name="PublishRate" ColumnName="PublishRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publishers">
+      <EntityTypeMapping TypeName="BookStorePlusModel.Publisher">
+        <MappingFragment StoreEntitySet="Publishers">
+          <ScalarProperty Name="PublisherID" ColumnName="PublisherID" />
+          <ScalarProperty Name="PublisherName" ColumnName="PublisherName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDetails">
+      <EntityTypeMapping TypeName="BookStorePlusModel.UserDetail">
+        <MappingFragment StoreEntitySet="UserDetails">
+          <ScalarProperty Name="FavoriteColor" ColumnName="FavoriteColor" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,123 @@
+﻿@model MVC3.DATA.EF.Publisher
+
+@*This partialView will be sued in a popup modal on Index for PublisherEdit*@
+
+@using (Html.BeginForm("", "", FormMethod.Post, new { id = "PublisherEditForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.PublisherID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PublisherName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PublisherName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PublisherName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.State, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IsActive, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.IsActive)
+                    @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" id="saveUpdate" value="Update Publisher" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+<script>
+//#region AJAX Show Create Form
+
+        //This toggles the end user capatability to see the form
+
+        //When the create publisher button is clicked toggle the create form visibility back on ( it should start hidden)
+        $('#PublisherCreate').hide();
+        $('#togglePublisherCreate').click(function () {
+            $('#PublisherCreate').toggle();
+            //Toggle the text and color of Button
+            if ($('#PublisherCreate').is(':visible')) {
+                $('#togglePublisherCreate').html('Cancel')
+                $('#togglePublisherCreate').attr('class', 'btn btn-danger')
+            } else {
+                $('#togglePublisherCreate').html('Create Publisher')
+                $('#togglePublisherCreate').attr('class', 'btn btn-primary')
+            }
+        });
+
+        //Submit Form
+        $('#PublisherEditForm').submit(function (e) {
+            //Serialize (package the form data for transport as an object)
+            //Create an array of objects with a name and value
+            var formData = $(this).serializeArray();
+            //Interrupt the normal submit event
+            e.preventDefault();
+            //Message the user while processing
+            $('#MessageContent').html('<div class="alert alert-info">Please wait...</div>');
+            //call to AJAX
+            $.ajax({
+                //Call the POST PublisherCreate Action
+                url:"@Url.Action("AjaxEdit", "Publishers")",
+                type: 'POST',
+                //serialized form data
+                data: formData,
+                //sending as Json request
+                dataType: 'json',
+                //If it works, show the success message in the <div> located above the RenderBody in the Layout
+                    success: function (data) {
+                    $('#MessageContent').html("<div class='alert alert-success'>Your record was successfully inserted!</div>");
+                        //Clear the form
+                        $('#PublisherEditForm')[0].reset();
+                        //Add the temporary row to the table (remember the browser is begin manually updated so you will see a message to refresh the view to see the   links)
+                        //You could code these in, we're leaving out so you can see asynchronous activity
+                        //When the view is refreshed the new record will load into the table with links in the last column
+                        $(function () {
+                            var row = '<tr><td>' + data.PublisherName +
+                                '</td><td>' + data.City +
+                                '</td><td>' + data.State +
+                                '</td><td>Refresh to View Options</td></tr>';//Buttons are not available for this new item
+                            //Add the row to the table
+                            $('#Publisher-' +data.PublisherID).replaceWith(row);
+                        });
+                            $('#PublisherEdit').dialog('close');//Close popup after submit
+                    },
+                //If there is an error, then show the alert message in the div located above the RenderBody
+                error: function (e) {
+                $('#MessageContent').html("<div class='alert a;ert-warning'> There was an error. Please try again or contact the site admin.</div>");
+                }
+            });
+        });
+</script>

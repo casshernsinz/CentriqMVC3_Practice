@@ -1,0 +1,39 @@
+﻿@using Microsoft.AspNet.Identity;
+@using MVC3.DATA.EF;
+@if (Request.IsAuthenticated) {
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" })) {
+        @Html.AntiForgeryToken()
+
+        //Get the current logged on user and use their id to retrieve the associated userDetails object
+        //Greet the user by their first name instead of their email address
+
+        //Connection to the database
+        BookStorePlusEntities db = new BookStorePlusEntities();
+        //get the current logged on user
+        string userID = User.Identity.GetUserId();
+
+        //Retrieve the UserDetails associated with the ASP.NET user
+        UserDetail currentUser = db.UserDetails.Where(ud => ud.UserID == userID).FirstOrDefault();
+
+        //If the user is null or not found we want to have default values for the First Name
+        string userFN = "Guest";
+
+        if(currentUser != null)
+        {
+            userFN = currentUser.FirstName;
+        }
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Hello " + userFN + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </li>
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+        </ul>
+    }
+}
+else {
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

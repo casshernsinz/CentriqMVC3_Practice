@@ -1,0 +1,54 @@
+﻿@model MVC3.DATA.EF.Publisher
+
+@*This partialView will have its visibility toggled, but wil sit above the table when displayed due to a button click, allowing for adding new records*@
+
+
+@using (Html.BeginForm("", "", FormMethod.Post, new { id = "PublisherCreateForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.PublisherName, new { htmlAttributes = new { @class = "form-control", placeholder = "Publisher" } })
+                @Html.ValidationMessageFor(model => model.PublisherName, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control", placeholder = "City" } })
+                @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-md-3">
+                @Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control", placeholder = "State" } })
+                @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+            </div>
+
+            <!--Removed the IsActive Checkbox - Default in the crate post in the controller-->
+            @*<div class="form-group">
+                    @Html.LabelFor(model => model.IsActive, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        <div class="checkbox">
+                            @Html.EditorFor(model => model.IsActive)
+                            @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>*@
+
+            <div class="col-md-1">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="btn btn-warning">
+    @Html.ActionLink("Back to List", "Index")
+</div>
+<br />
+<br />
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+}

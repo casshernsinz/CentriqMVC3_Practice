@@ -1,0 +1,24 @@
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\MVC3.DATA.EF.dll.config
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\MVC3.DATA.EF.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\MVC3.DATA.EF.pdb
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\EntityFramework.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\EntityFramework.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.csprojAssemblyReference.cache
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.csproj.CoreCompileInputs.cache
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.csproj.CopyComplete
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.pdb
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\MVC3.DATA.EF.dll.config
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\MVC3.DATA.EF.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\MVC3.DATA.EF.pdb
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\EntityFramework.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\EntityFramework.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.csprojAssemblyReference.cache
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.csproj.CoreCompileInputs.cache
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.csproj.CopyComplete
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.DATA.EF\obj\Debug\MVC3.DATA.EF.pdb

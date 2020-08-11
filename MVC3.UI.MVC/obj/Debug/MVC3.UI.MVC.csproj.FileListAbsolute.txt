@@ -1,0 +1,226 @@
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.UI.MVC.dll.config
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.UI.MVC.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.UI.MVC.pdb
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csc.exe
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csc.exe.config
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csc.rsp
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csi.exe
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csi.exe.config
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csi.rsp
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.AppContext.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Console.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.Compression.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Claims.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.ValueTuple.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\vbc.exe
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\vbc.exe.config
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\vbc.rsp
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Antlr3.Runtime.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\EntityFramework.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\EntityFramework.SqlServer.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Newtonsoft.Json.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Owin.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Helpers.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Mvc.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Optimization.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Razor.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\WebGrease.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Helpers.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Mvc.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Optimization.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Razor.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Newtonsoft.Json.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Antlr3.Runtime.pdb
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\EntityFramework.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\EntityFramework.SqlServer.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.csprojAssemblyReference.cache
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.csproj.CoreCompileInputs.cache
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.csproj.CopyComplete
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.pdb
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.DATA.EF.dll
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.DATA.EF.pdb
+C:\Users\jlong\Documents\Visual Studio 2017\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.DATA.EF.dll.config
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.UI.MVC.dll.config
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.UI.MVC.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.UI.MVC.pdb
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csc.exe
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csc.exe.config
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csc.rsp
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csi.exe
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csi.exe.config
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\csi.rsp
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.AppContext.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Console.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.Compression.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.FileSystem.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.IO.Pipes.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.AccessControl.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Claims.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.ValueTuple.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Xml.XPath.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\vbc.exe
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\vbc.exe.config
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\vbc.rsp
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\VBCSCompiler.exe
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Antlr3.Runtime.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\EntityFramework.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\EntityFramework.SqlServer.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Google.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Web.Infrastructure.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.DATA.EF.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Newtonsoft.Json.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Owin.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Helpers.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Mvc.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Optimization.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Razor.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.Deployment.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.Razor.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\WebGrease.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.DATA.EF.pdb
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\MVC3.DATA.EF.dll.config
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Helpers.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Mvc.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Optimization.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Razor.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.Deployment.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.WebPages.Razor.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Newtonsoft.Json.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Antlr3.Runtime.pdb
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\EntityFramework.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\EntityFramework.SqlServer.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Google.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.csprojAssemblyReference.cache
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.csproj.CoreCompileInputs.cache
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.csproj.CopyComplete
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\obj\Debug\MVC3.UI.MVC.pdb
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\PagedList.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\PagedList.Mvc.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\PagedList.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\PagedList.Mvc.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Net.Http.Formatting.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Http.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Http.WebHost.dll
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Net.Http.Formatting.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Http.xml
+E:\Projects\08_MVC3\MVC3\src\MVC3.UI.MVC\bin\System.Web.Http.WebHost.xml

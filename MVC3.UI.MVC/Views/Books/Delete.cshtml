@@ -1,0 +1,128 @@
+﻿@model MVC3.DATA.EF.Book
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Book</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ISBN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitsSold)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitsSold)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublishDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSiteFeature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSiteFeature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsGenreFeature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsGenreFeature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookRoyalty.BookID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookRoyalty.BookID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookStatus.BookStatusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookStatus.BookStatusName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre.GenreName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre.GenreName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Publisher.PublisherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Publisher.PublisherName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
